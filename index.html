@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <fieldset>
+            <legend>Task Details:</legend>
+            <label for="taskInput">Task:</label>
+            <input type="text" id="taskInput" placeholder="Add a new task">
+
+            <label for="taskCategory">Category:</label>
+            <select id="taskCategory">
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="shopping">Shopping</option>
+                <!-- Add more categories as needed -->
+            </select>
+
+            <label for="taskPriority">Priority:</label>
+            <select id="taskPriority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+                <!-- Add more priority levels as needed -->
+            </select>
+        </fieldset>
+
+        <button onclick="addTask()">Add</button>
+
+        <ul id="taskList"></ul>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
